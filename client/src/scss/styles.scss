@@ -1,0 +1,189 @@
+@import "bootstrap/scss/bootstrap";
+
+$primary-red: #F05454;
+$primary-yellow: #FFF4CE;
+$primary-blue: #3E7BB7;
+$primary-grey: #848181;
+
+$grey-100: #EDECEC;
+$grey-200: #CECCCC;
+$grey-600: #484747;
+$grey-800: #121212;
+
+
+$yellow-100: #FFFEF8;
+$yellow-200: #FFFAE2;
+$yellow-600: #E4D59F;
+$yellow-800: #C8B676;
+
+$blue-100: #B3CAE2;
+$blue-200: #80ADDA;
+$blue-600: #496C8F;
+$blue-800: #30475E;
+
+
+$red-100: #F6D3D3;
+$red-200: #F49898;
+$red-600: #AA3838;
+$red-800: #702323;
+
+
+$dark-bg: #702323;
+$light-bg: #FFFEF8;
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  background: $light-bg;
+  font-family: "Noto Kufi Arabic", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  color: $blue-800;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: $red-600;
+}
+
+.navbar-brand img {
+  width: 120px;
+}
+
+.section-header {
+  text-align: center;
+  margin: 3rem;
+  background: $yellow-200;
+  padding: 1rem;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.hero-img {
+  width: 100%;
+}
+
+.hero-img img {
+  width: 100%;
+}
+
+
+.services-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.service {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: space-evenly;
+}
+
+.service-reverse {
+  flex-direction: row-reverse;
+}
+
+.service-image {
+  width: 50%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.service-description {
+  flex: 1;
+  text-align: right;
+  max-width: 600px;
+}
+
+.service-description h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.service-description p {
+  font-size: 1em;
+  line-height: 1.6;
+}
+
+.footer {
+  background-color: $grey-800;
+  color: $grey-100;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 20px;
+}
+
+.footer-left,
+.footer-right {
+  flex: 1;
+  min-width: 250px;
+  margin: 10px 0;
+}
+
+.footer-left h4,
+.footer-right h4 {
+  margin-bottom: 10px;
+  font-size: 1.2em;
+}
+
+.footer-left p,
+.footer-bottom p {
+  margin: 5px 0;
+  font-size: 0.9em;
+}
+
+.footer-right .social-links {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0 0;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-right .social-links li {
+  margin: 0 10px;
+}
+
+.footer-right .social-links li a img {
+  width: 30px;
+  height: 30px;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  border-top: 1px solid $primary-grey;
+  padding-top: 10px;
+}
+
+
+@media (max-width:800px) {
+
+  .hero,
+  .service {
+    flex-wrap: wrap;
+  }
+
+  .navbar-brand img {
+    width: 90px;
+  }
+}
